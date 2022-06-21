@@ -1,11 +1,12 @@
+//Компонент пары
 import React from 'react'
 
 function Pair(props) {
     const {item} = props;
   return (
-    <div>
-        <div> {item.first} </div>  <div> {item.second} </div>
-    </div>
+    <span>
+        <span> {item.first} </span>  <span class='gray'> {item.second} </span>
+    </span>
   )
 }
 

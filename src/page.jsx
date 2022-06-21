@@ -1,14 +1,13 @@
+//Основной компонент, содержащий все остальные
 import React from 'react'
 import Banner from './banner';
-import Currency from './currency';
 import NewsList from './newslist'
 import Search from './search';
-import ShortLists from './shortlists';
-import AsideWidget from './asidewidget';
 import Weather from './weather';
 import TV from './tv';
 import Cast from './cast';
 import Popular from './popular';
+import Map from './map';
 
 const example = {
   example: 'Фаза Луны сегодня',
@@ -47,16 +46,14 @@ const popular = {
 function Page() { 
   return (
     <>
-      <NewsList over = {over}/>
-      <AsideWidget />
-      <Currency />      
+      <NewsList over = {over}/>    
       <Search example = {example}/>
       <Banner ad = {ad}/>
       <Weather item = {weather}/>
       <TV time = {time}/>
       <Cast/>
       <Popular item={popular}/>
-      <ShortLists />
+      <Map over={over}/>
     </>
   ) 
 }

@@ -1,3 +1,4 @@
+//Компонент эфира. Содержит компоненты пары
 import React from 'react'
 import Pair from './pair'
 
@@ -7,22 +8,22 @@ const pair1 = {
 }
 
 const pair2 = {
-  icon: 'Ночь. Мир в это время',
-  text: 'earthTV'
+  first: 'Ночь. Мир в это время',
+  second: 'earthTV'
 }
 const pair3 = {
   icon: 'Андерей Возн...',
-  text: 'Совершенно секретно'
+  second: 'Совершенно секретно'
 }
 
 
 function TV() {
   return (
     <div class='cast'>
-      <p  class="bluetitle"> Эфир</p>
-      <Pair item={pair1}/>
-      <Pair item={pair2}/>
-      <Pair item={pair3}/>
+      <h4> Эфир</h4>
+      <p><Pair item={pair1}/></p>
+      <p><Pair item={pair2}/></p>
+      <p><Pair item={pair3}/></p>
     </div>
   )
 }

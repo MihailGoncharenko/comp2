@@ -1,3 +1,4 @@
+//Компонент посещаемого
 import React from 'react'
 
 function Popular(props) {
@@ -5,9 +6,9 @@ function Popular(props) {
   return (
     <div class='popular'>
         <p class="bluetitle">Посещаемое</p>
-        <p>{item.main1} — {item.secondary1} </p>
-        <p>{item.main2} — {item.secondary1}</p>
-        <p>{item.main3} — {item.secondary1}</p>
+        <p><span class='bold'>{item.main1}</span> — {item.secondary1} </p>
+        <p><span class='bold'>{item.main2}</span> — {item.secondary1}</p>
+        <p><span class='bold'>{item.main3}</span> — {item.secondary1}</p>
         
     </div>
   )

@@ -1,3 +1,4 @@
+//Компонент отвечающий за телепрограмму. Содержит компоненты пары
 import React from 'react'
 import Pair from './pair'
 
@@ -7,12 +8,12 @@ const pair1 = {
 }
 
 const pair2 = {
-  icon: 'Джинглики',
-  text: 'Карусель INT'
+  first: 'Джинглики',
+  second: 'Карусель INT'
 }
 const pair3 = {
-  icon: 'Наедине со всеми',
-  text: 'Первый'
+  first: 'Наедине со всеми',
+  second: 'Первый'
 }
 
 
@@ -20,10 +21,10 @@ function TV(props) {
   const {time} = props;
   return (
     <div class='tv'>
-      <p  class="bluetitle"> Телепрограмма</p>
-      {time.time1} <Pair item={pair1}/>
-      {time.time2} <Pair item={pair2}/>
-      {time.time3} <Pair item={pair3}/>
+      <h4> Телепрограмма</h4>
+      <p>{time.time1} <Pair item={pair1}/></p>
+      <p>{time.time2} <Pair item={pair2}/></p>
+      <p>{time.time3} <Pair item={pair3}/></p>
     </div>
   )
 }
